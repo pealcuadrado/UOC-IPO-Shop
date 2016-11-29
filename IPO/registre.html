@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Un cop més - Registre</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/estils.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="login-background">
+
+
+<!-- Form Name -->
+<div class="row">
+    <div class="col-sm-offset-5 col-xs-offset-2">
+   		<h1><span class="glyphicon glyphicon-leaf orange" aria-hidden="true"></span>  Un cop més</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
+		<legend><span class="glyphicon glyphicon-pencil blue" aria-hidden="true"></span> Formulari de registre</legend>
+	</div>
+</div>
+<!-- USUARI-->
+<div class="row">
+  <div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
+    <div class="panel panel-default  panel-primary">
+      <div class="panel-heading">Dades d'usuari</div>
+      <div class="panel-body">
+      	<form class="form-horizontal col-md-7 col-xs-10 col-md-offset-2 col-xs-offset-1" id="formUsuari">
+			<fieldset>
+   				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="usuari">Nom d'usuari</label>  
+  					<div class="">
+  						<input id="Usuari" name="usuari" type="email" placeholder="usuari" class="form-control input-md" required="">
+    				</div>
+				</div>
+				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="password">Password</label>  
+  					<div class="">
+  						<input id="Password" name="password" type="password" placeholder="Password" class="form-control input-md" required="">
+    				</div>
+				</div>
+			</fieldset>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--PERSONAL-->
+<div class="row">
+  <div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
+    <div class="panel panel-default  panel-primary">
+      <div class="panel-heading">Dades personals</div>
+      <div class="panel-body">
+      	<form class="form-horizontal col-md-7 col-xs-10 col-md-offset-2 col-xs-offset-1" id="formPersonal">
+			<fieldset>
+   				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="Nom">Nom</label>  
+  					<div class="">
+  						<input id="Nom" name="Nom" type="text" placeholder="Nom" class="form-control input-md" required="">
+    				</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="Cognoms">Cognoms</label>  
+  					<div class="">
+  						<input id="Cognoms" name="Cognoms" type="text" placeholder="Cognoms" class="form-control input-md" required="">
+  					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="Neixament">Data de neixement</label>  
+  					<div class="">
+  						<input id="Neixament" name="Neixament" type="text" placeholder="DD/MM/YYYY" class="form-control input-md">
+  					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="Telefon">Telèfon</label>  
+  					<div class="">
+  						<input id="Telefon" name="Telefon" type="text" placeholder="Telefon" class="form-control input-md" required="">
+ 	 				</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="Movil">Mòvil</label>  
+  					<div class="">
+  						<input id="Movil" name="Movil" type="Movil" placeholder="Movil" class="form-control input-md">
+  					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="Email">Email</label>  
+  					<div class="">
+  						<input id="Email" name="Email" type="email" placeholder="Email" class="form-control input-md" required="">
+  					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="Direccio">Direcció</label>  
+  					<div class="">
+  						<input id="Direccio" name="Direccio" type="text" placeholder="Direccio" class="form-control input-md">
+  					</div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+  					<label class="control-label" for="Sexe">Sexe</label>
+  					<div class="">
+    					<select id="Sexe" name="Sexe" class="form-control">
+      						<option value="1">Home</option>
+      						<option value="2">Dona</option>
+    					</select>
+  					</div>
+				</div>
+
+				<!-- Select Basic -->
+				<div class="form-group">
+  					<label class="control-label" for="Pais">Pais</label>
+  					<div class="">
+    					<select id="Pais" name="Pais" class="form-control">
+      						<option value="1">Espanya</option>
+      						<option value="2">Portugal</option>
+      						<option value="2">França</option>
+      						<option value="3">Andorra</option>
+      						<option value="4">Alemanya</option>
+      						<option value="5">Italia</option>
+      						<option value="6">Regne Unit</option>
+      						<option value="7">Altres (Europa)</option>
+      						<option value="8">Altres (Resta del món)</option>
+    					</select>
+  					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="Provincia">Provincia</label>  
+  					<div class="">
+  						<input id="Provincia" name="Provincia" type="text" placeholder="Provincia" class="form-control input-md" required="">
+  					</div>
+				</div>
+
+				<!-- Text input-->
+				<div class="form-group">
+  				<label class="control-label" for="Municipi">Municipi</label>  
+  					<div class="">
+  						<input id="Municipio" name="Municipi" type="text" placeholder="Municipi" class="form-control input-md" required="">
+  					</div>
+				</div>
+			</fieldset>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--PREFERENCIES-->
+<div class="row">
+  <div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
+    <div class="panel panel-default  panel-primary">
+      <div class="panel-heading">Preferencies personals</div>
+      <div class="panel-body">
+      	<form class="form-horizontal col-md-7 col-xs-10 col-md-offset-2 col-xs-offset-1" id="formPreferencies">
+			<fieldset>
+   				<!-- Select Basic -->
+				<div class="form-group">
+  					<label class="control-label" for="CategoriaFav">Tria la teva categoria favorita</label>
+  					<div class="">
+    					<select id="CategoriaFav" name="CategoriaFav" class="form-control">
+      						<option value="1">Electrònica</option>
+      						<option value="2">Electrodomestics</option>
+      						<option value="2">Cuina</option>
+      						<option value="3">Motor</option>
+      						<option value="4">Animals</option>
+      						<option value="5">Roba</option>
+      						<option value="6">Mobles</option>
+      						<option value="7">Esports</option>
+      						<option value="8">Curiositats</option>
+      						<option value="9">Altres</option>
+    					</select>
+  					</div>
+				</div>
+				
+				<!-- Select Basic -->
+				<div class="form-group">
+  					<label class="control-label" for="CategoriaFav">Tria el rang de preus que més t'interessa</label>
+  					<div class="">
+    					<select id="Preu" name="Preu" class="form-control">
+      						<option value="1">&#60 5&euro;</option>
+      						<option value="2">5-10&euro;</option>
+      						<option value="2">10-25&euro;</option>
+      						<option value="3">25-100&euro;</option>
+      						<option value="4">100-250&euro;</option>
+      						<option value="5">250-1000&euro;</option>
+      						<option value="6">&#62 1000&euro;</option>
+    					</select>
+  					</div>
+				</div>
+				
+				<!--Checkbox-->
+				<div class="form-group">
+					<label class="control-label" for="CategoriaFav">Tria altres categories en les que també estàs interessat</label>
+					<table border="0">
+					<tr>
+						<td><div class="checkbox">
+  							<label><input type="checkbox" value="">Electrònica</label>
+						</div></td>
+						<td><div class="checkbox">
+  							<label class="right-column"><input type="checkbox" value="">Electrodomèstics</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td><div class="checkbox">
+  							<label><input type="checkbox" value="">Motor</label>
+						</div></td>
+						<td><div class="checkbox disabled">
+  							<label class="right-column"><input type="checkbox" value="">Animals</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td ><div class="checkbox disabled">
+  							<label><input type="checkbox" value="">Roba</label>
+						</div></td>
+						<td><div class="checkbox">
+  							<label class="right-column"><input type="checkbox" value="">Mobles</label>
+						</div></td>
+					</tr>
+					<tr>
+						<td><div class="checkbox disabled">
+  							<label><input type="checkbox" value="">Esports</label>
+						</div></td>
+						<td ><div class="checkbox disabled">
+  							<label class="right-column"><input type="checkbox" value="">Curiositats</label>
+						</div></td>
+					</tr>
+					</table>
+				</div>
+			</fieldset>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  	<div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
+  		<!-- Button -->
+		<div class="form-group">
+   			<a href="index.html">
+    			<button id="registre" name="Registrarse" class="btn btn-info">Registrar-se</button>
+    		</a>
+		</div>
+	</div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<script src="js/funcions.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Un cop més - Pagament</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/estils.css" rel="stylesheet">
+<script src="js/productes.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="login-background">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-leaf orange" aria-hidden="true"></span> Un cop més</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+				<li><a href="#"><div class="glyphicon glyphicon-circle-arrow-left"></div></a></li>
+           		<li><a href="#"><div class="glyphicon glyphicon-retweet"></div></a></li>
+            </ul>
+      		<form class="navbar-form navbar-left">
+        		<div class="form-group">
+          			<input type="text" class="form-control" placeholder="Cercar a la pàgina">
+        		</div>
+        			<button type="submit" class="btn btn-default">Cercar</button>
+      			</form>
+            <ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><div class="glyphicon glyphicon-question-sign"></div></a></li>
+				<li><a href="#"><div class="glyphicon glyphicon-wrench"></div></a></li>
+			  <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><div class="glyphicon glyphicon-user"></div> <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a href="#">Les meves compres</a></li>
+                 <li><a href="#">Els meus productes</a></li>
+                  <li><a href="#">Dades personals i d'usuari</a></li>
+                  <li><a href="#">Preferencies</a></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+
+<!-- Form Name -->
+<!--<div class="row title">
+    <div class="col-sm-offset-5 col-xs-offset-2">
+		<h1><span class="glyphicon glyphicon-leaf orange" aria-hidden="true"></span>  Un cop més</h1>
+	</div>
+</div>-->
+<div class="row title">
+
+	<div class="col-md-12 col-xs-12 col-md-offset-1 col-xs-offset-1">
+		<h1><span class="glyphicon glyphicon-shopping-cart blue" aria-hidden="true"></span> Pagament del producte</h1>
+	</div>
+</div>
+<!-- Enviament-->
+ <div class="row">
+  <!--style="float: right; margin-right:75px;"-->
+  <div class="col-sm-3 col-xs-8 col-sm-offset-1 col-xs-offset-2">
+ <div class="producte-compra">
+ 	<script language="javascript">document.write('<img src="'+productes[idProd].imatge+'" height="200" width="220" class="imatge-producte">');</script><br>
+	 <span class="nom-producte"><script language="javascript">document.write(productes[idProd].nom);</script> </span><br><span class="preu-producte"><script language="javascript">document.write(productes[idProd].preu);</script></span>
+	 <p><script language="javascript">document.write(productes[idProd].resum);</script></p>
+	 <i>Data estimada d'entrega: 15/12/2016</i>
+ </div>
+ <br>
+</div>
+  <div class="col-sm-6 col-xs-10 col-sm-offset-1 col-xs-offset-1">
+    <div class="panel panel-default  panel-primary">
+      <div class="panel-heading">Preferencies de l'enviament</div>
+      <div class="panel-body">
+      	<form class="form-horizontal col-md-7 col-xs-10 col-md-offset-2 col-xs-offset-1" id="formUsuari">
+			<fieldset>
+				<div class="form-group">
+  					<label class="control-label" for="pref">Prefències d'entrega (Horari, Dies, etc.)</label>  
+  					<div class="">
+  						<input id="pref" name="pref" type="text" placeholder="Preferències d'entrega" class="form-control input-md" required=>
+    				</div>
+				</div>
+				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="direccio">Adreça d'entrega</label>  
+  					<div class="">
+  						<input id="direccio" name="direccio" type="text" placeholder="Direccio" class="form-control input-md" required>
+    				</div>
+				</div>
+				<div class="checkbox form-group">
+  					<label><input type="checkbox" value="" id="dirDefecte">Enviar a la adreça de l'usuari</label>
+				</div>
+			</fieldset>
+		</form>
+      </div>
+    </div>
+  </div>
+
+
+<!--PAGAMENT-->
+
+  <div class="col-sm-6 col-xs-10 col-sm-offset-1 col-xs-offset-1">
+    <div class="panel panel-default  panel-primary">
+      <div class="panel-heading">Dades bancàries</div>
+      <div class="panel-body">
+      	<form class="form-horizontal col-md-7 col-xs-10 col-md-offset-2 col-xs-offset-1" id="formPersonal">
+			<fieldset>
+  				<!-- Select Basic -->
+				<div class="form-group">
+  					<label class="control-label" for="targeta">Tipus de targeta</label>
+  					<div class="">
+    					<select id="targeta" name="targeta" class="form-control">
+      						<option value="1">Visa Crèdit</option>
+      						<option value="2">Visa dèbit</option>
+      						<option value="3">Master Card</option>
+    					</select>
+  					</div>
+				</div>
+   				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="Nom">Nom del titular</label>  
+  					<div class="">
+  						<input id="Nom" name="Nom" type="text" placeholder="Nom" class="form-control input-md" required>
+    				</div>
+				</div>
+				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="Num">Número de la targeta</label>  
+  					<div class="">
+  						<input id="Num" name="Num" type="text" placeholder="Número targeta" class="form-control input-md" required>
+    				</div>
+				</div>
+				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="NumSeg">Número de seguretat</label>  
+  					<div style="width:40%;">
+  						<input id="NumSeg" name="NumSeg" type="password" placeholder="Número de seguretat" class="form-control" required>
+    				</div>
+				</div>
+				<!-- Text input-->
+				<div class="form-group">
+  					<label class="control-label" for="caducitat">Data de caducitat (MM/YY)</label>  
+  					<div style="width:40%;">
+  						<input id="caducitat" name="caducitat" type="text" placeholder="MM/YY" class="form-control" required>
+    				</div>
+				</div>
+
+			</fieldset>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  	<div class="col-sm-1 col-xs-2 col-sm-offset-10 col-xs-offset-1">
+  		<!-- Button -->
+		<div class="form-group">
+   			<a href="cerca_productes.html" id="pagament">
+    			<button  name="pagament" class="btn btn-info">Pagar</button>
+    		</a>
+		</div>
+	</div>
+	<div id="progres" class="col-md-4 col-xs-4" style="display: none">
+		<span class="glyphicon glyphicon-time"></span> Realitzant pagament...
+	</div>
+</div>
+
+<div class="row img-row">
+	<div class="col-sm-8 col-sm-offset-1">
+		<img src="images/cert1.png" width="100" height="100">
+		<img src="images/cert2.png" width="125" height="100">
+		<img src="images/cert3.jpg" width="135" height="100">
+	</div>
+</div>
+
+<div class="row footer">
+	<div class=" text-footer col-md-10 col-md-offset-2">
+		&#9400; Un cop més, tots els drets reservats. 2016
+	</div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<script src="js/funcions.js"></script>
+</body>
+</html>
+
